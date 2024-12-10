@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="src/main.js" defer></script>
+  </head>
+  <body>
+    <div id="whole">
+      <img id="logo" onclick="logo()" src="/img/logo.png" alt="" />
+      <div id="menu">
+        <button>
+          <img
+            class="imgs"
+            onclick="filter('shirts',null)"
+            src="/img/blue_shirts.png"
+            alt=""
+          />
+        </button>
+        <button>
+          <img
+            class="imgs"
+            onclick="filter('pants',null)"
+            src="/img/blue_pants.png"
+            alt=""
+          />
+        </button>
+        <button>
+          <img
+            class="imgs"
+            onclick="filter('skirt',null)"
+            src="/img/blue_skirt.png"
+            alt=""
+          />
+        </button>
+        <button class="menuBtn" onclick="filter(null,'blue')" id="blueBtn">
+          Blue
+        </button>
+        <button class="menuBtn" onclick="filter(null,'yellow')" id="yellowBtn">
+          Yellow
+        </button>
+        <button class="menuBtn" onclick="filter(null,'pink')" id="pinkBtn">
+          Pink
+        </button>
+      </div>
+      <div id="list"></div>
+    </div>
+  </body>
+</html>
