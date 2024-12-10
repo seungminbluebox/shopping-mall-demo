@@ -32,7 +32,7 @@ function createProduct(i) {
   const newElement = document.createElement("div");
   newElement.classList.add("product");
   const imgElement = document.createElement("img");
-  imgElement.src = `./img/${i.color}_${i.type}.png`;
+  imgElement.src = `../img/${i.color}_${i.type}.png`;
   imgElement.classList.add("productImg");
   newElement.appendChild(imgElement);
   const textElement = document.createTextNode(`${i.type}, ${i.color}`);
